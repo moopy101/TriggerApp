@@ -1,0 +1,13 @@
+{
+  "name": "yodeck-media-connector",
+  "version": "1.0.0",
+  "description": "Backend service to fetch Yodeck media list using API key.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^2.6.7" 
+  }
+}
