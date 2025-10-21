@@ -1,0 +1,18 @@
+# render.yaml
+services:
+  - type: web
+    name: yodeck-api-connector
+    env: node
+    # Use the root directory where server.js lives
+    rootDir: .
+    # The command to start the server
+    startCommand: node server.js
+    # Only expose port 80 to the public internet
+    port: 10000 
+    # CRITICAL: We use a placeholder for environment variables.
+    # You still set the YODECK_API_KEY value in the Render dashboard.
+    envVars:
+      - key: YODECK_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
